@@ -4,7 +4,10 @@
 	<title></title>
 </head>
 <body>
-	<h1>Blog Home!</h1>
-	<h2>Blog Home! test 2</h2>
+	{% for post in posts %}  <!-to use if, for logic statements use->
+		<h1>{{post.title}}</h1>  <!-Double curly brackets for accessing dict keys->
+		<p>By {{post.author}} on {{post.date_posted}}</p>
+		<p>{{post.content}}</p>
+	{% endfor %}
 </body>
 </html>
