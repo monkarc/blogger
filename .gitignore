@@ -1,4 +1,3 @@
 db.sqlite3
-**.pyc
 gitcommit.sh
-**/*.pyc
+**/__pycache__/
