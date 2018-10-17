@@ -1,5 +1,5 @@
 db.sqlite3
 *.pyc
 gitcommit.sh
-blog/__pycache__/*
+*/__pycache__/*.pyc
 blogger/__pycache__/*
