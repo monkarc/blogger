@@ -3,3 +3,4 @@ gitcommit.sh
 **/__pycache__/
 *.py[cod]
 __pycache__/
+.idea/
