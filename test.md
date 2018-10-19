@@ -29,5 +29,14 @@ we are using sqlite for now
 - Now to create the tables in the last we need to run
 	> python manage.py migrate
 
-There is Django python shell which gives access to these models for us to query them line by line
+There is Django python shell which gives access to these models for us to query them line by line,
+these are used in the code files for fetching data from DB
+
+Dunder __str__ for detailed information display
+
+Jinja date filter for displaying the information in customized fashion
+
+Register models in admin.py app file for the models to show up in the admin panel 
+updating the Post model data directly from admin panel
+
 
