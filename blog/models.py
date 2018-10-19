@@ -10,3 +10,6 @@ class Post(models.Model):
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
+	# dunder str method is used for displaying meaningful name when object is printed
+    def __str__(self):
+        return self.title
