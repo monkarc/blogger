@@ -44,7 +44,9 @@ updating the Post model data directly from admin panel
 CH6 
 User registration form
 Adding new fields to the forms using form inheritence in forms.py 
-Formatting the registration forms automatically using crispy-forms package
+forms.save() command to save the details to the DB
 
+Formatting the registration forms automatically using crispy-forms package
+pip install the package > add it to installed_apps in settings.py > now its is available to load into html page files as {% load crispy_forms_tags %}
 
 
