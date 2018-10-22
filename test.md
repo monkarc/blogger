@@ -46,7 +46,8 @@ User registration form
 Adding new fields to the forms using form inheritence in forms.py 
 forms.save() command to save the details to the DB
 
-Formatting the registration forms automatically using crispy-forms package
+Formatting the registration forms automatically using crispy-forms package (used for showing the forms in crispy fashion)
 pip install the package > add it to installed_apps in settings.py > now its is available to load into html page files as {% load crispy_forms_tags %}
 
-
+CH7
+User Authentication page (login and logout pages)
