@@ -40,3 +40,11 @@ Register models in admin.py app file for the models to show up in the admin pane
 updating the Post model data directly from admin panel
 
 
+
+CH6 
+User registration form
+Adding new fields to the forms using form inheritence in forms.py 
+Formatting the registration forms automatically using crispy-forms package
+
+
+
