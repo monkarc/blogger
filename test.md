@@ -59,7 +59,14 @@ CH8
 User profile and Picture
 
 create model with dunder str for Profile > Run makemigrations cmd after pip installing pillow > Run migrate command for changes to take effect in Database > register this model in Users application admin.py
+-Pillow is package required to work with images inside django
 
-*Pillow is package required to work with images inside django
+Creating a profile page to display all of the user information like the profile image, email and username
+
+Django signals to automatically trigger the profile creation for new user sign ups on the blog instead of doing it from admin page.
+
+
+CH9
+Update User Profile
 
 
