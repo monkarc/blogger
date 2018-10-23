@@ -51,3 +51,15 @@ pip install the package > add it to installed_apps in settings.py > now its is a
 
 CH7
 User Authentication page (login and logout pages)
+
+
+
+
+CH8
+User profile and Picture
+
+create model with dunder str for Profile > Run makemigrations cmd after pip installing pillow > Run migrate command for changes to take effect in Database > register this model in Users application admin.py
+
+*Pillow is package required to work with images inside django
+
+
