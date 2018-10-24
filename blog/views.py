@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import (ListView,
                                   DetailView,
                                   CreateView)
@@ -34,10 +35,9 @@ class PostDetailView(DetailView):
     model = Post
 
 
-
 # CreateView/UpdateView looks for certain template with naming convention
 # The naming convention is <app>/<model>_form.html
-class PostCreateView(CreateView):
+class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
     fields = ['title','content']
 
