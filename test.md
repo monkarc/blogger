@@ -1,3 +1,71 @@
+To create virtual envirnoment
+	> virtualenv django_dev
+	> source django_dev/bin/activate
+
+In virtual Envirnoment,
+
+- to copy the packages list to requirements.txt
+	> pip freeze --local > requirements.txt
+
+
+- to install the django package
+ 	> pip install django
+- to check which version of django is installed
+	> python -m django –version
+
+
+- To create a project in django use the below command, this command creates a project named ‘blog_project’
+
+	> django-admin startproject blog_project
+- to run the server, cd into the project folder
+	> python manage.py runserver
+		this command gives the url where our website is running
+
+- The admin page of the website is by default created and can be accessed at (this is specified in url.py file)
+	> http://127.0.0.1:8000/admin
+
+- In the same project, you can create multiple applications
+	> python manage.py startapp blog
+		This creates app called blog
+
+- Different views are created for the blog application by adding new functions into the views.py
+and subsequently updating the urls.py. Views always return HTTPresponse or exception
+
+
+- Updating settings.py file INSTALLED_APPS
+After the app called ‘blog’ is created, it has to added to settings.py file for it to be installed in the project. This helps Django know the app ‘blog’ is there and also the templates folder created is picked up automatically. (blog.apps.blogconfig)
+
+
+-Rendering .html files from template folder
+
+- Rendering posts/context from db or dictionary, which are accessible from .html files for displaying using jinja(templating engine)
+
+- jinga if else statement
+- template inheritance using base.html page to be used as extends in other .html files
+- adding bootstrap template code from bootstrap website for basic padding
+- adding main.css file, navigation bar, main.html snippets
+-url reference for links on the base.html from urls.py instead of hardcoding and changing it in multiple locations
+
+
+ADMIN PAGE
+	> python manage.py migrate
+	> python manage.py createsuperuser
+		- user: djangostg
+		- pass: testpass
+
+- user: testuser
+-pass: pass!@#$
+
+DATABASE TABLES FOR APPLICATIONS
+
+django ORM (object relation mapper)
+sqlite
+
+represent databases structure as classes called models
+models.py file
+
+after crearting database model
+
 CH4 
 Admin page 
 
